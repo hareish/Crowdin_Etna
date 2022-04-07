@@ -3,9 +3,16 @@
 {% block title %}New Projet{% endblock %}
 
 {% block body %}
-    <h1>Create new Projet</h1>
+   <section class="container">
+    <div class="row">
+     <div class="col">
+    <h1>Créer Votre Projet</h1>
 
     {{ include('projet/_form.html.twig') }}
 
     <a href="{{ path('app_projet_index') }}">back to list</a>
+    </div>
+    </div>
+    </section>
+
 {% endblock %}

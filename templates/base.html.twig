@@ -13,7 +13,10 @@
           <script src="{{asset('assets/js/bootstrap.bundle.js')}}"></script>
     </head>
     <body>
-        {% include "_partials/nav.html.twig" %}
+        {% include "_partials/nav.html.twig" %} 
+           <a href="{{ path('app_projet_new') }}"> <button class="btn btn-primary"> Créer un Projet</button> </a>
+           <a href="{{ path('app_lang_new') }}"> <button class="btn btn-secondary"> Créer une lange</button> </a>
+         
         {% include "_partials/footer.html.twig" %}
 
         {% block body %} {% endblock %}

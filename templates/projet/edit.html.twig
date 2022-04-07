@@ -3,11 +3,17 @@
 {% block title %}Edit Projet{% endblock %}
 
 {% block body %}
-    <h1>Edit Projet</h1>
+   <section class="container">
+    <div class="row">
+     <div class="col">
+    <h1>Editer un Projet</h1>
 
     {{ include('projet/_form.html.twig', {'button_label': 'Update'}) }}
 
     <a href="{{ path('app_projet_index') }}">back to list</a>
 
     {{ include('projet/_delete_form.html.twig') }}
+    </div>
+    </div>
+    </section>
 {% endblock %}

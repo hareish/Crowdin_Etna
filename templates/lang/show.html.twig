@@ -3,6 +3,9 @@
 {% block title %}Lang{% endblock %}
 
 {% block body %}
+   <section class="container">
+    <div class="row">
+     <div class="col">
     <h1>Lang</h1>
 
     <table class="table">
@@ -23,4 +26,9 @@
     <a href="{{ path('app_lang_edit', {'id': lang.id}) }}">edit</a>
 
     {{ include('lang/_delete_form.html.twig') }}
+
+    </div>
+    </div>
+    </section>
+    
 {% endblock %}
